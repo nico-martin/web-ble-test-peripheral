@@ -1,7 +1,7 @@
 process.env["BLENO_DEVICE_NAME"] = "Web BLE Test";
 
 const bleno = require("bleno");
-const characteristic = require("characteristic");
+const characteristic = require("./characteristic");
 
 const bluetoothService = async () => {
   const service = {
