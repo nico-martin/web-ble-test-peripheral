@@ -3,10 +3,9 @@ const Characteristic = bleno.Characteristic;
 const events = require("events");
 const em = new events.EventEmitter();
 
-const UPDATE_EVENT = "VALUE_UPDATE";
-
 module.exports = (uuid) => {
   let value = new Buffer([0]);
+  const UPDATE_EVENT = `VALUE_UPDATE_${uuid}`;
 
   return new Characteristic({
     uuid,
