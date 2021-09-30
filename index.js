@@ -5,12 +5,12 @@ const characteristic = require("./characteristic");
 
 const bluetoothService = async () => {
   const service = {
-    uuid: "0xff0a",
+    uuid: 0xff0a,
     characteristics: [
-      characteristic("0xff0b"),
-      characteristic("0xff0c"),
-      characteristic("0xff0d"),
-      characteristic("0xff0e"),
+      characteristic(0xff0b),
+      characteristic(0xff0c),
+      characteristic(0xff0d),
+      characteristic(0xff0e),
     ],
   };
 
