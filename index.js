@@ -16,7 +16,7 @@ const bluetoothService = async () => {
 
   bleno.on("stateChange", (state) => {
     if (state === "poweredOn") {
-      bleno.startAdvertising("Scroll Hat Matrix", [service.uuid]);
+      bleno.startAdvertising("Web BLE Test", [service.uuid]);
     } else {
       bleno.stopAdvertising();
     }
